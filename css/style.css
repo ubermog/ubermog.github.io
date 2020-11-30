@@ -1,5 +1,6 @@
 /* Crazy grid chaos template */
 
+/* Setting up font-face */
 @font-face {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -12,7 +13,6 @@ body,
 	line-height: 31px;
 	margin: 0;
 }
-
 
 h1 {
 	font-size: 33px;
@@ -47,11 +47,8 @@ p {
   font-weight: lighter;
 }
 
-.cprght {
-  text-align: center;
-  color: antiquewhite;
-}
 
+/* Grid settings */
 body {
   
   background-color: #2e2e2e;
@@ -79,7 +76,7 @@ body {
     
 }
 
-
+/* Logo and menue */
 
 .logo-head {
   grid-area: logo-head;
@@ -160,8 +157,6 @@ text-decoration: none;
   
 }
 
-
-
 .flex-nav-container > li a {
   
 text-decoration: none;
@@ -174,6 +169,42 @@ color: white
 .flex-nav-container li a:hover {
   background: #647182;
 }
+
+/* Background headers */
+
+.bg11-header > h2{
+  text-align: center;
+  margin-top: 86px;
+  color: antiquewhite;
+  text-shadow: #000 2px 2px;
+
+}
+
+.bg11 {
+  grid-area: bg11;
+  height: 237px;
+  background-color: #647182;
+}
+
+.bg2 {
+  grid-area: bg2;
+  height: 237px;
+  background-color: #8292a8;
+}
+
+.bg3 {
+  grid-area: bg3;
+  height: 237px;
+  background-color: #a3a3a3;
+}
+
+.bg4 {
+  grid-area: bg4;
+  height: 237px;
+  background-color: #5c5c5c;
+}
+
+/* Content starting */
 
 .content-header {
   grid-area: content-header;
@@ -202,47 +233,6 @@ width: auto;
   width: 350px;
   margin-top: 150px;
   margin-left: 100px;
-  
-  
-}
-
-.content1-img {
-  display: block;
-  background-image: url(/img/merge.png);
-  background-repeat: none;
-  background-size: cover;
-  margin: 10px;
-  width: 550px;
-  height: 750px;
-  
-  
-  
-}
-
-.content11-img {
-  display: block;
-  background-image: url(/img/Reydt-sailor-in-a-light-bulb.png);
- 
-  background-size: contain;
-  background-repeat: none;
-  margin: 10px;
-  width: 500px;
-  height: 500px;
-  
-  
-  
-}
-
-.content2 div {
-  display: flex;
-  flex-flow: column;
-  margin: 20px;
-
-
-}
-
-.content2 div > img {
-  margin: 10px;
 }
 
 .text-block {
@@ -265,9 +255,6 @@ width: auto;
   padding: 35px;
   padding-top: 0px;
   margin: 10px;
-  
-  
-
 }
 
 .text-content-block2 {
@@ -290,7 +277,6 @@ width: auto;
   padding:35px;
   padding-top: 15px;
   margin: 10px;
-
 }
 
 .text-content-block4 {
@@ -305,44 +291,34 @@ width: auto;
 
 }
 
-.bg11-header > h2{
-  text-align: center;
-  margin-top: 86px;
-  color: antiquewhite;
-  text-shadow: #000 2px 2px;
-  
-
-}
-
-.bg11 {
-  grid-area: bg11;
-  height: 237px;
-  background-color: #647182;
-}
-
-.bg2 {
-  grid-area: bg2;
-  height: 237px;
-  background-color: #8292a8;
-}
-
-.bg3 {
-  grid-area: bg3;
-  height: 237px;
-  background-color: #a3a3a3;
-}
-
-.bg4 {
-  grid-area: bg4;
-  height: 237px;
-  background-color: #5c5c5c;
-}
-
 .content1 {
   grid-area: content1;
   height: 100%;
   background: rgb(38,32,42);
 background: linear-gradient(214deg, rgba(38,32,42,1) 0%, rgba(65,47,47,1) 50%, rgba(74,66,54,1) 100%);
+}
+
+.content1-img {
+  display: block;
+  background-image: url(/img/merge.png);
+  background-repeat: none;
+  background-size: cover;
+  margin: 10px;
+  width: 550px;
+  height: 750px;
+
+}
+
+.content11-img {
+  display: block;
+  background-image: url(/img/Reydt-sailor-in-a-light-bulb.png);
+ 
+  background-size: contain;
+  background-repeat: none;
+  margin: 10px;
+  width: 500px;
+  height: 500px;
+  
 }
 
 .content2 {
@@ -355,6 +331,16 @@ background: linear-gradient(34deg, rgba(38,32,42,1) 0%, rgba(65,47,47,1) 50%, rg
   padding-top: 60px;
   padding-bottom: 60px;
   
+}
+.content2 div {
+  display: flex;
+  flex-flow: column;
+  margin: 20px;
+
+}
+
+.content2 div > img {
+  margin: 10px;
 }
 
 .content3 {
@@ -381,7 +367,7 @@ background: linear-gradient(90deg, rgba(38,32,42,1) 0%, rgba(65,47,47,1) 50%, rg
   padding-bottom: 60px;
 }
 
-
+/* Some footer rules*/
 
 .footer {
   grid-area: footer;
@@ -397,6 +383,13 @@ background: linear-gradient(90deg, rgba(38,32,42,1) 0%, rgba(65,47,47,1) 50%, rg
   padding-top: 20px;
 }
 
+.cprght {
+  text-align: center;
+  color: antiquewhite;
+}
+
+/* Maybe i'll need this later 
+
 .imprint {
   
   
@@ -405,6 +398,10 @@ background: linear-gradient(90deg, rgba(38,32,42,1) 0%, rgba(65,47,47,1) 50%, rg
 .gototop {
   
 }
+
+*/
+
+/* fun with buttons */
 
 .gototop-btn > button {
   
@@ -427,11 +424,13 @@ background: linear-gradient(90deg, rgba(38,32,42,1) 0%, rgba(65,47,47,1) 50%, rg
 
 @media all and (max-width: 1656px) {
 
-  .grid-container{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 0 0;
-    grid-template-areas: 
+  /* Starting Grid */
+
+.grid-container{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas: 
       "logo-head"
       "searchbox"
       "menue-head"
@@ -447,44 +446,68 @@ background: linear-gradient(90deg, rgba(38,32,42,1) 0%, rgba(65,47,47,1) 50%, rg
       "footer";
   }
 
-  .content-header {
+/* Head rules */
+
+.logo-head {
+  text-align: center;
+  }
+
+.menue-head {
+  min-width: auto;
+  }
+
+.flex-nav-container {
+  justify-content: space-around;
+  }
+
+.searchbar {
+  display: block;
+  text-align: center;
+  padding: 0.9em;
+  max-width: none;
+    
+  }
+
+  /* Content settings */
+
+.content-header {
         
-    background-position: center;
+  background-position: center;
   }
   
-  .content-container {
+.content-container {
   
   padding-top: 5vh;
   padding-bottom: 5vh;
   }
   
-  .profile-img {
-    margin: 20px;
+.profile-img {
+  margin: 20px;
     
     
   }
   
-  .text-block {
-    width: 100%;
-    bottom: 20px;
-    right: 0px;
-    padding: 20px;
-    margin: 10px;
+.text-block {
+  width: 100%;
+  bottom: 20px;
+  right: 0px;
+  padding: 20px;
+  margin: 10px;
   }
 
-  .text-content-block {
-    height: 100%;
-width: 95%;
+.text-content-block {
+  height: 100%;
+  width: 95%;
   }
 
 .text-content-block2 {
-height: auto;
-width: 95%;
+  height: auto;
+  width: 95%;
 }
 
 .text-content-block3 {
   height: auto;
-width: 80%;
+  width: 80%;
 
 }
 
@@ -493,30 +516,11 @@ width: 80%;
 width: 95%;
 }
 
-  .searchbar {
-    display: block;
-    text-align: center;
-    padding: 0.9em;
-    max-width: none;
-    
-  }
-
-  .logo-head {
-    text-align: center;
-  }
-
-  .menue-head {
-    min-width: auto;
-  }
-
-  .flex-nav-container {
-    justify-content: space-around;
-  }
-  .form-group {
+.form-group {
     width: 95%;
   }
 
-  .footer {
+.footer {
      
     height: 100%;
     width: 100%;
@@ -533,6 +537,7 @@ width: 95%;
 body {
   width: 80%;
 }
+/* Starting Grid */
     .grid-container{
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
@@ -554,6 +559,8 @@ body {
         
     }
   
+    /* Head rules */
+
     .searchbar {
       display: block;
       text-align: center;
@@ -561,8 +568,6 @@ body {
       
     }
 
-    
-    
     .menue-head {
       min-width: auto;
       height: auto;
@@ -580,6 +585,7 @@ body {
       border-top: 1px solid rgba(255, 255, 255, 0.3)
       }
     
+ /* Content settings */
 
       .content-header {
         
@@ -588,8 +594,8 @@ body {
       
       .content-container {
       
-      padding-top: 5vh;
-      padding-bottom: 5vh;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
       }
       
       .profile-img {
@@ -610,24 +616,24 @@ body {
 
       .text-content-block {
         height: 100%;
-width: 95%;
+        width: 95%;
       }
   
 .text-content-block2 {
   height: 100%;
-width: 95%;
+  width: 95%;
 
 }
  
 .text-content-block3 {
   height: auto;
-width: 80%;
+  width: 80%;
 
 }
 
 .text-content-block4 {
   height: 100%;
-width: 95%;
+  width: 95%;
 }
     
  
@@ -635,7 +641,7 @@ width: 95%;
     .content1 {
       
       height: 100%;
-width: 100%;
+      width: 100%;
     }
     
     .content2 {
